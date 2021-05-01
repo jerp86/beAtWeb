@@ -52,3 +52,10 @@ button {
     font-size: 14px;
   }
 }
+
+@media (max-width: 374px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
