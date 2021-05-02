@@ -1,0 +1,107 @@
+form {
+  margin: auto;
+  margin-top: 1.5rem;
+
+  color: #7030a0;
+
+  width: 80%;
+  max-width: 580px;
+}
+
+fieldset {
+  border: 2px solid #59429d;
+  background-color: #ddd;
+}
+
+fieldset legend {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+button,
+input,
+textarea {
+  border-radius: 0.3125rem;
+}
+
+fieldset.group .field {
+  float: left;
+  margin-left: 1rem;
+}
+
+.field {
+  margin-bottom: 1em;
+}
+
+.field label {
+  margin-bottom: 0.2em;
+  display: block;
+  font-weight: 700;
+}
+
+.field input,
+.field textarea {
+  padding: 0.2em;
+  border: 0.0625rem solid #59429d;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  width: 16.875rem;
+  max-width: 260px;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #59429d;
+}
+
+.field input1rem,
+.field textarea:focus,
+.field input:valid,
+.field textarea:valid {
+  background-color: #e0e0f8;
+  color: #59429d;
+}
+
+.btnConfirm {
+  font-size: 1.2em;
+  background-color: #59429d;
+  color: #ffffff;
+  margin-bottom: 1em;
+  margin-right: -50%;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+.btnConfirm:hover {
+  background-color: #000;
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.8);
+  text-shadow: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .field input,
+  .field textarea {
+    width: 13.75rem;
+  }
+
+  .field input::placeholder {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .field input,
+  .field textarea {
+    width: 18.75rem;
+  }
+}

@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="styles/global.css">
   <link rel="stylesheet" href="styles/pages/index.css">
+  <link rel="stylesheet" href="styles/pages/formCreate.css">
 
   <title>#beAtWeb - Agrotools</title>
 </head>
@@ -31,9 +32,56 @@
     <h2>O que você deseja fazer?</h2>
 
     <div>
-      <button>Criar questionário</button>
-      <button>Responder questionário</button>
+      <button data-js="create">Criar questionário</button>
+      <button class="answer">Responder questionário</button>
     </div>
   </main>
+
+  <section class="hidden">
+    <form class="createQuestion">
+      <fieldset class="group">
+        <legend>Criando Questionário</legend>
+        <div class="field">
+          <label for="title">Título do Questionário</label>
+          <input
+            type="text"
+            name="title"
+            autocapitalize="word"
+            required
+            placeholder="Digite um título para o questionário"
+          >
+        </div>
+
+        <div class="field">
+          <label for="user">Usuário</label>
+          <input
+            type="text"
+            name="user"
+            required
+            placeholder="Digite seu usuário do sistema"
+          >
+        </div>
+
+        <div class="field">
+          <label for="dateCreate">Data de Cadastro</label>
+          <input type="date" readonly name="dateCreate" required>
+        </div>
+
+        <div class="field">
+          <label for="question">Pergunta</label>
+          <textarea
+            rows="6"
+            name="question"
+            required
+            placeholder="Digite sua pergunta"
+          ></textarea>
+        </div>
+      </fieldset>
+
+      <button data-js="submitCreateQuestion" type="submit" class="btnConfirm">
+        Salvar
+      </button>
+    </form>
+  </section>
 </body>
 </html>
