@@ -21,7 +21,7 @@
 ---
 
 <p align="center">
-  <img src="https://agrotools.com.br/wp-content/uploads/2019/06/LogoAgrotoolsNew.png" width="300" heigth="300" style="background-color: #fff;">
+  <img src="https://user-images.githubusercontent.com/54115624/116924489-533e5880-ac2e-11eb-9f5e-535b6ebc51e8.png" width="300" heigth="300" style="background-color: #fff;">
 </p>
 
 <p align="center">
