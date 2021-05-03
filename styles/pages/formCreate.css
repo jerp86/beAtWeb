@@ -42,7 +42,7 @@ fieldset.group .field {
 
 .field input,
 .field textarea {
-  padding: 0.2em;
+  padding: 0.5em;
   border: 0.0625rem solid #59429d;
   box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
   width: 16.875rem;
@@ -52,9 +52,10 @@ fieldset.group .field {
 .field input::placeholder,
 .field textarea::placeholder {
   color: #59429d;
+  font-size: 1rem;
 }
 
-.field input1rem,
+.field input:focus,
 .field textarea:focus,
 .field input:valid,
 .field textarea:valid {
@@ -72,7 +73,7 @@ fieldset.group .field {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.3s;
@@ -84,10 +85,6 @@ fieldset.group .field {
   text-shadow: none;
 }
 
-.hidden {
-  display: none;
-}
-
 @media (max-width: 700px) {
   .field input,
   .field textarea {
@@ -95,7 +92,11 @@ fieldset.group .field {
   }
 
   .field input::placeholder {
-    font-size: 1rem;
+    font-size: 0.75rem;
+  }
+
+  .btnConfirm {
+    top: 90%;
   }
 }
 
