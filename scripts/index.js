@@ -147,12 +147,13 @@ btnCreate.addEventListener("click", () => {
       updateLocalStorage("@beAt:questions", data);
     }
 
-    alert(`Obrigado ${user} por criar esse questionário! 📝`);
+    alert(`Obrigado ${user.value} por criar esse questionário! 📝`);
     formCreate.classList.add("hidden");
     title.value = null;
     user.value = null;
     dateCreate.value = null;
     question.value = null;
+    setTimeout(() => window.location.reload(), 1500);
   });
 
   formCreate.classList.toggle("hidden");
